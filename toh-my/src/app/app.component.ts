@@ -9,28 +9,9 @@ import { Hero } from './hero';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
   title = 'toh-my exerciese !';
-  heroes: Hero[];
-  selectedHero: Hero;
 
-  constructor(private heroService: HeroService) {
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-    this.getHeroes();
-  }
-
-  getHeroes(): void {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
-  }
-
-  onselect(hero: Hero) {
-    this.selectedHero = hero;
-  }
-
+  ngOnInit(): void {}
 }
-
-
-
-
