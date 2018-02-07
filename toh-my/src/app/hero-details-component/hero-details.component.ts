@@ -32,4 +32,10 @@ export class HeroDetailsComponent implements OnInit {
     goBack(): void {
         this.localtion.back();
     }
+
+
+    save(): void {
+        this.heroservice.updateHero(this.hero)
+            .then(() => this.goBack());
+    }
 }
