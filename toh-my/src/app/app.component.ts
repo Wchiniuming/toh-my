@@ -9,7 +9,7 @@ import { Hero } from './hero';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'toh-my exerciese !';
+  title = 'Toh-my Exerciese !';
 
   constructor() {}
 
