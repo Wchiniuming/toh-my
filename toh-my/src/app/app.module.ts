@@ -1,10 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
+// 模拟http远程获取数据
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+
+import { AppRoutingModule } from './app-routing.module';
 import { HeroService } from './hero.service';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 import { HeroDetailsComponent } from './hero-details-component/hero-details.component';
 import { HeroesComponent } from './heroes-component/heroes.component';
 import { DashboardComponent } from './dashboard-component/dashboard.component';
@@ -22,6 +27,8 @@ import { DashboardComponent } from './dashboard-component/dashboard.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
