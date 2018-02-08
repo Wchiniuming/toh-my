@@ -5,10 +5,10 @@ import { HttpModule } from '@angular/http';
 
 // 模拟http远程获取数据
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
+import { InMemoryDataService } from './services/in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HeroService } from './hero.service';
+import { HeroService } from './services/hero.service';
 import { AppComponent } from './app.component';
 import { HeroDetailsComponent } from './hero-details-component/hero-details.component';
 import { HeroesComponent } from './heroes-component/heroes.component';
