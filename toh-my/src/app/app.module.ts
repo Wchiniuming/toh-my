@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 import { HeroDetailsComponent } from './hero-details-component/hero-details.component';
 import { HeroesComponent } from './heroes-component/heroes.component';
 import { DashboardComponent } from './dashboard-component/dashboard.component';
-
+import { HeroSearchComponent } from './hero-search-component/hero-search.component';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import { DashboardComponent } from './dashboard-component/dashboard.component';
     AppComponent,
     HeroDetailsComponent,
     HeroesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,
